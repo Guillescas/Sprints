@@ -1,3 +1,36 @@
+header {
+  background-color: rgb(248, 132, 0);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.back-btn-content {
+  display: flex;
+}
+
+.back-btn-content button {
+  padding-right: 5px;
+  border: none;
+  background-color: rgb(248, 132, 0);
+}
+
+.title-txt p {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;  
+}
+
+.btn-text {
+  color: rgb(0, 0, 0);
+}
+
+.title-txt {
+  color: rgb(255, 255, 255);
+}
+
 body {
   margin: 0;
   width: 100vw;
@@ -12,50 +45,6 @@ body .microphone-icon {
   align-items: center;
   justify-content: center;
   margin-top: 25px;
-}
-
-header {
-  background-color: rgb(248, 132, 0);
-  align-items: center;
-}
-
-.back-btn-content {
-  vertical-align: center;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-}
-
-.back-btn-content button {
-  padding-right: 5px;
-  border: none;
-  background-color: rgb(248, 132, 0);
-  align-items: center;
-}
-
-.back-btn-content button i {
-  border: none;
-  background-color: rgb(248, 132, 0);
-  align-items: center;
-  justify-content: center;
-}
-
-.back-btn-content button i:hover {
-  background-color: #f89900;
-}
-
-.back-btn-content p {
-  color: rgb(0, 0, 0);
-}
-
-.title-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.title-content p {
-  color: #FFF;
 }
 
 .title {
