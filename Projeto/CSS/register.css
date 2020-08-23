@@ -37,6 +37,20 @@ header {
   background-color: #f89900;
 }
 
+.back-btn-content p {
+  color: rgb(0, 0, 0);
+}
+
+.title-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-content p {
+  color: #FFF;
+}
+
 .title {
   display: flex;
   align-items: center;
