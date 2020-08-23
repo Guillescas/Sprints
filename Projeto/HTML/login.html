@@ -11,22 +11,29 @@
     <link rel="stylesheet" href="../CSS/login.css" />
   </head>
   <body>
-    <h2>EducAll</h2>
-    <div>
+    <header>
+      <div class="title-content">
+        <p>EducAll</p>
+      </div>
+    </div>
+    </header>
+    <div class="title">
       <h3>Login</h3>
     </div>
-    <div class="div-login">
-      <form class="form">
-        <input type="text" placeholder="Email..." class="caixa-texto" />
-        <input type="password" placeholder="Senha..." class="caixa-texto" />
-        <button type="submit" class="box-btn">
-          <a href="#">Entrar</a>
-        </button>
-        <p class="not-registered">
-          Não possui cadastro?
-          <a href="../HTML/register.html">Clique Aqui</a>
-        </p>
-      </form>
+    <div class="wrapper">
+      <div class="div-login">
+        <form class="form">
+          <input type="text" placeholder="Email..." class="caixa-texto" />
+          <input type="password" placeholder="Senha..." class="caixa-texto" />
+          <div class="wrap-button">
+            <button type="submit" class="box-btn">Entrar</button>
+          </div>
+          <p class="not-registered">
+            Não possui cadastro?  
+            <a href="../HTML/register.html">   Clique Aqui</a>
+          </p>
+        </form>
+      </div>
     </div>
   </body>
 </html>
