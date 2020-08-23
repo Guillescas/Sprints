@@ -1,5 +1,62 @@
 body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
   font-family:'Poppins', sans-serif;
+}
+
+header {
+  background-color: rgb(248, 132, 0);
+  align-items: center;
+}
+
+.title-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-content p {
+  color: #FFF;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+  margin-top: 50px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-login {
+  height: 100vh;
+  width: 100vw;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .div-login input {
@@ -12,21 +69,30 @@ body {
   border-radius: 2px;
   padding-left: 11px;
   padding-top: 10px; 
-  padding-right: 20px;
+  padding-right: 50px;
   padding-bottom: 10px;
   font-family:'Poppins', sans-serif;
 }
 
+.wrap-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .box-btn {
-  background-color: rgb(248, 132, 0); ;
+  background-color: rgb(248, 132, 0);
   color: rgb(250, 250, 250);
-  margin-top: 15px;
-  padding-left: 25px;
+  margin-top: 25px;
+  padding-left: 22px;
   padding-top: 10px; 
-  padding-right: 25px;
+  padding-right: 22px;
   padding-bottom: 10px;
   border: 0px;
   border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
 .box-btn:hover {
@@ -34,6 +100,9 @@ body {
 }
 
 .not-registered {
-  font-family:'Poppins', sans-serif;
-  font-size: 11px;
+  margin-top: 20px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
