@@ -7,6 +7,13 @@ body {
   font-family:'Poppins', sans-serif;
 }
 
+body .microphone-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 header {
   background-color: rgb(248, 132, 0);
   align-items: center;
@@ -62,6 +69,26 @@ header {
 .div-login input {
   margin-top: 5px;
   font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-login input:focus::placeholder {
+  color:#FA5858;
+}
+
+
+.div-login button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-login p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .caixa-texto {
@@ -105,4 +132,25 @@ header {
   display: flex;
   align-items: center;
   justify-self: center;
+}
+
+.microphone-icon {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.microphone-btn {
+  background-color: #f89900;
+  border: none;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.microphone-btn:hover {
+  background-color: rgb(248, 132, 0);
 }
