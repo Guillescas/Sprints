@@ -5,8 +5,8 @@
 }
 
 header {
+  vertical-align: center;
   background-color: rgb(248, 132, 0);
-  height: 7%;
 }
 
 .header-content {
@@ -18,22 +18,18 @@ header {
 
 .div-left {
   display: flex;
-  align-items: left;
-  justify-content: left;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
 }
 
 .div-left p {
-  color: rgb(255, 255, 255);
-  font-size: 1.6rem;
-  margin-left: 2px;
-  margin-top: 10px;
-}
-
-.div-center {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-right: 5px;
 }
 
 .div-right {
@@ -43,37 +39,17 @@ header {
   padding-right: 5px;
 }
 
-.div-center input {
-  display: flex;
-  border: 0.5px solid;
-  align-items: center;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  margin-top: 5px;
-  width: 50%;
-  padding-left: 15px;
-  background-color: rgba(0, 0, 0, 0.068);
-}
-
-.div-right button {
-  color: white;
-  padding-top: 0 auto;
-}
-
-.div-right i {
-  color: white;
-  height: 25px;
-  padding: 20px;
-}
-
 .icon-bell {
   background-color: rgb(248, 132, 0);
   border: none;
-  padding: 0 auto;
 }
 
-.input-btn {
-  font-size: 25px;
+.div-right i {
+  display: flex;
+  font-size: 22px;
+  color: white;
+  height: 20%;
+  padding: 0 auto;
 }
 
 body {
@@ -81,11 +57,81 @@ body {
   height: 100vh;
 }
 
-.input-btn {
+.div-center {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.microphone-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.microphone-icon button {
   background-color: rgb(255, 255, 255);
   border: none;
   padding: 0 auto;
-  height: 20px;
-  margin-top: 5px;
+  height: 50%;
 }
+
+.microphone-icon i {
+  display: flex;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  height: 50%;
+  padding-left: 10px;
+}
+
+.input-adjust {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.div-center .input-adjust input {
+  height: 50%;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-adjust input {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
+.lupa-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lupa-icon button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 0 auto;
+  padding-right: 30px;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.lupa-icon i {
+  display: flex;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  height: 50%;
+  padding-right: 10px;
+}
+
+
 
