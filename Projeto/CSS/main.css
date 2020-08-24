@@ -4,6 +4,11 @@
   font-family:'Poppins', sans-serif;
 }
 
+button {
+  outline: none;
+  cursor: pointer;
+}
+
 header {
   vertical-align: center;
   background-color: rgb(248, 132, 0);
