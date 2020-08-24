@@ -58,16 +58,19 @@ body {
 }
 
 .div-center {
+  width: 100%;
   height: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  resize: vertical;
 }
 
 .microphone-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 35px;
 }
 
 .microphone-icon button {
@@ -113,13 +116,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 35px;
 }
 
 .lupa-icon button {
   background-color: rgb(255, 255, 255);
   border: none;
   padding: 0 auto;
-  padding-right: 30px;
   height: 50%;
   align-items: center;
   justify-content: center;
@@ -130,7 +133,6 @@ body {
   font-size: 22px;
   color: rgb(0, 0, 0);
   height: 50%;
-  padding-right: 10px;
 }
 
 
