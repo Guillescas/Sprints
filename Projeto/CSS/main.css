@@ -140,5 +140,13 @@ body {
   height: 50%;
 }
 
+@media(max-width: 640px) {
+  header {
+    width: 20px;
+  }
 
+  .input-adjust input {
+    width: 20px;
+  }
+}
 
