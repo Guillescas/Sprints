@@ -69,28 +69,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   resize: vertical;
-}
-
-.microphone-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 35px;
-}
-
-.microphone-icon button {
-  background-color: rgb(255, 255, 255);
-  border: none;
-  padding: 0 auto;
-  height: 50%;
-}
-
-.microphone-icon i {
-  display: flex;
-  font-size: 22px;
-  color: rgb(0, 0, 0);
-  height: 50%;
-  padding-left: 10px;
+  padding: 0 32px;
 }
 
 .input-adjust {
@@ -115,13 +94,21 @@ body {
   border-radius: 25px;
   border: 2px solid #ffffff;
   background-color: rgba(0, 0, 0, 0.068);
+  padding-left: 22px;
+}
+
+.input-adjust i {
+  position: relative;
+  margin-left: -55px;
+  margin-top: 22px;
+  cursor: pointer;
+  padding: 20px;
 }
 
 .lupa-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 35px;
 }
 
 .lupa-icon button {
@@ -142,7 +129,7 @@ body {
 
 @media(max-width: 640px) {
   .input-adjust {
-    width: 200px;
+    width: 250px;
     justify-content: initial;
   }
 
