@@ -141,12 +141,12 @@ body {
 }
 
 @media(max-width: 640px) {
-  header {
-    width: 20px;
+  .input-adjust {
+    width: 200px;
+    justify-content: initial;
   }
 
   .input-adjust input {
     width: 20px;
   }
 }
-
