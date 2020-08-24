@@ -3,6 +3,11 @@
   font-family:'Poppins', sans-serif;
 }
 
+button {
+  outline: none;
+  cursor: pointer;
+}
+
 header {
   background-color: rgb(248, 132, 0);
   font-size: 30px;
@@ -42,7 +47,6 @@ header {
   font-size: 21px;
   padding-right: 5px;
 }
-
 
 .btn-text {
   color: rgb(0, 0, 0);
