@@ -9,163 +9,149 @@ button {
   cursor: pointer;
 }
 
-body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-body .microphone-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 32px;
-}
-
 header {
   background-color: rgb(248, 132, 0);
-  align-items: center;
   height: 130px;
   min-height: 130px;
 }
 
-.wrap-button a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-.not-registered a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-.title-content {
+header .title-content {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   height: 130px;
   min-height: 130px;
 }
 
-.title-content .back-btn {
+header .title-content .back-btn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.title-content .back-btn a {
+header .title-content .back-btn a {
   color: white;
   text-decoration: none;
 }
 
-.title-content .the-main-title {
+header .title-content .the-main-title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.title-content p {
+header .title-content p {
   color: #FFF;
   font-size: 38px;
 }
 
+
+/* === PAGE TITLE (LOGIN) === */
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 24px;
-  margin-bottom: 40px;
   font-size: 40px;
 }
 
+/* === FORM CONTENT === */
+
 .wrapper {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
 }
 
-.wrapper button {
+.wrapper .div-login {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.div-login {
-  height: 100vh;
-  width: 100vw;
-  height: 200px;
+  flex-direction: column;
   width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.div-login button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.wrapper .div-login .input {
+  width: 100%;
 }
 
-.div-login:first-child {
-  margin-bottom: 30px;
+.wrapper .div-login .input input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  outline: none;
 }
 
-.div-login .input p {
+.wrapper .div-login .input + .input {
+  margin-bottom: 24px;
+}
+
+.wrapper .div-login .input p {
   margin: 5px 0;
   font-weight: 300;
 }
 
-.div-login .input.second {
-  margin-top: 18px;
-}
-
-.div-login input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  width: 300px;
-  border: solid 1px #CCC;
-  border-radius: 8px;
-  padding: 8px 18px;
-  font-weight: 300;
-}
+/* === LOGIN BUTTON === */
 
 .wrap-button {
+  background-color: rgb(248, 132, 0);
+  border-radius: 8px;
+  width: 100%;
+  height: 48px;
+  border: 2px solid transparent;
+  transition: .2s;
+}
+
+.wrap-button a {
+  width: 100%;
+  height: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: .2s;
 }
 
-.wrap-button button:hover {
+.wrap-button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border: 2px solid #000;
+}
+
+.wrap-button a:hover {
+  color: black;
+}
+
+.wrapper .div-login .form .wrap-button:hover {
   color: black;
   border: 2px solid #000;
   background-color: transparent;
 }
 
-.wrap-button button {
-  transition: .2s;
-  font-size: 22px;
-  border: 2px solid transparent;
-}
-
-.box-btn {
-  background-color: rgb(248, 132, 0);
-  color: rgb(250, 250, 250);
-  margin-top: 45px;
-  padding: 10px 22px;
-  border: 0px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-}
+/* === NOT REGISTER AREA === */
 
 .not-registered {
   margin-top: 20px;
   font-size: 15px;
   text-align: center;
+}
+
+.not-registered a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 .not-registered .space {
@@ -181,11 +167,13 @@ header {
   border-bottom: 2px solid #000;
 }
 
-.microphone-icon {
+/* === MIC AREA === */
+
+body .microphone-icon {
   display: flex;
   align-items: center;
-  justify-self: center;
-  margin-top: 70px;
+  justify-content: center;
+
 }
 
 .microphone-btn {
@@ -196,15 +184,15 @@ header {
   border-radius: 50%;
   transition: .2s;
   border: 2px solid transparent;
-  margin-bottom: 24px;
 }
 
 .microphone-btn:hover {
   background-color: transparent;
-  color: black;
   border: 2px solid #000;
+  color: black;
 }
 
 .microphone-btn i {
   font-size: 25px;
 }
+
