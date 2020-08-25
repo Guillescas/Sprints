@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="icon" href="https://pbs.twimg.com/media/Eeq58TDX0AElxCx.png">
-    <script
-      src="https://kit.fontawesome.com/bbde3d316c.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../CSS/login.css" />
-  </head>
-  <body>
-    <header>
-      <div class="title-content">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="icon" href="https://pbs.twimg.com/media/Eeq58TDX0AElxCx.png">
+  <script src="https://kit.fontawesome.com/bbde3d316c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/login.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="title-content">
+      <div class="back-btn">
+        <a href="../HTML/index.html">
+          <i class="fas fa-arrow-left"></i></script>
+          Voltar
+        </a>
+      </div>
+      <div class="the-main-title">
         <p>EducAll</p>
       </div>
-    </header>
-    <div class="title">
-      <h3>Login</h3>
-    </div>
-    <div class="wrapper">
-      <div class="div-login">
-        <form class="form">
-          <input type="text" placeholder="Email..." class="caixa-texto" />
-          <input type="password" placeholder="Senha..." class="caixa-texto" />
-          <div class="wrap-button">
-            <button type="submit" class="box-btn">
-              <a href="../HTML/main.html">Entrar</a>
-            </button>
-          </div>
-          <p class="not-registered">
-            Não possui cadastro?
-            <a class="space" href="../HTML/register.html">Clique Aqui</a>
-          </p>
-        </form>
+      <div>
+
       </div>
     </div>
-    <div class="microphone-icon">
-      <button class="microphone-btn">
-        <i class="fas fa-microphone"></i>
-      </button>
+  </header>
+
+
+  <div class="title">
+    <p>Login</p>
+  </div>
+  <div class="wrapper">
+    <div class="div-login">
+      <form class="form">
+
+        <div class="input">
+          <p>E-MAIL</p>
+          <input type="text" placeholder="exemplo@exemplo.com.br" />
+        </div>
+        <div class="input second">
+          <p>SENHA</p>
+          <input type="password" placeholder="Senha..." />
+        </div>
+
+        <div class="wrap-button">
+          <button type="submit" class="box-btn">
+            <a href="../HTML/main.html">Entrar</a>
+          </button>
+        </div>
+        <p class="not-registered">
+          Não possui cadastro?
+          <a class="space" href="../HTML/register.html"><strong class="linha-biruliru">Clique Aqui</strong></a>
+        </p>
+
+      </form>
     </div>
-  </body>
+  </div>
+  <div class="microphone-icon">
+    <button class="microphone-btn">
+      <i class="fas fa-microphone"></i>
+    </button>
+  </div>
+</body>
+
 </html>

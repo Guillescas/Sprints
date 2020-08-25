@@ -1,7 +1,6 @@
 * {
   margin: 0;
   font-family:'Poppins', sans-serif;
-  transition: all 0.1s;
 }
 
 a {
@@ -74,12 +73,21 @@ body {
 .btn-conhecer {
   background-color: rgb(253, 253, 253);
   margin-top: 45px;
-  padding-left: 22px;
-  padding-top: 10px; 
-  padding-right: 22px;
-  padding-bottom: 10px;
-  border: 0px;
+  padding: 10px 22px;
   border-radius: 2px;
+  border: 2px solid transparent;
+  transition: .2s;
+}
+
+.btn-conhecer:hover {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: white;
+}
+
+.btn-conhecer a {
+  padding: 16px 32px;
+  font-size: 16px;
 }
 
 .btn-content {
