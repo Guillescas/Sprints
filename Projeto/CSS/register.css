@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:ital,wght@0,100;0,300;1,100;1,500;1,700&display=swap');
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family:'Poppins', sans-serif;
 }
@@ -11,13 +15,21 @@ button {
 header {
   background-color: rgb(248, 132, 0);
   font-size: 30px;
+  height: 130px;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
 }
 
 .register-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0px 32px;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  height: 130px;
 }
 
 .register-header .div-left {
@@ -27,6 +39,26 @@ header {
   align-items: center;
 }
 
+.register-header .div-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 32px;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
 .div-left a {
   display: flex;
   flex-direction: row;
@@ -34,7 +66,6 @@ header {
   align-items: center;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 30px;
 }
 
 .div-left button {
@@ -45,7 +76,6 @@ header {
 
 .div-left button i {
   font-size: 21px;
-  padding-right: 5px;
 }
 
 .btn-text {
@@ -55,14 +85,6 @@ header {
 .div-right p {
   color: rgb(255, 255, 255);
   font-size: 34px;
-}
-
-body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 body .microphone-icon {
@@ -76,9 +98,9 @@ body .microphone-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 30px;
+  font-size: 40px;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
 .wrapper {
@@ -87,10 +109,32 @@ body .microphone-icon {
   justify-content: center;
 }
 
+.form .item p {
+  margin-top: 16px;
+  margin-bottom: -12px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.form .divide-inputs {
+  display: flex;
+}
+
+.form .divide-inputs > div {
+  margin-right: 16px;
+}
+
 .wrapper input {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
+  width: 300px;
+  border: solid 1px #CCC;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 300;
+  margin-top: 16px;
 }
 
 .wrapper button {
@@ -109,19 +153,6 @@ body .microphone-icon {
   justify-content: center;
 }
 
-.div-register input {
-  margin-top: 8px;
-  font-size: 20px;
-  padding-right: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.div-register input:focus::placeholder {
-  color:#FA5858;
-}
-
 .caixa-texto {
   border: solid 1px #CCC;
   border-radius: 2px;
@@ -137,51 +168,75 @@ body .microphone-icon {
   justify-content: center;
 }
 
+.wrap-button button:hover {
+  color: black;
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
 .wrap-button button {
+  transition: .2s;
   font-size: 22px;
+  border: 2px solid transparent;
 }
 
 .box-btn {
   background-color: rgb(248, 132, 0);
   color: rgb(250, 250, 250);
-  margin-top: 45px;
+  margin-top: 32px;
   padding-left: 22px;
   padding-top: 10px; 
   padding-right: 22px;
   padding-bottom: 10px;
   border: 0px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-}
-
-.box-btn:hover {
-  background-color: #f89900;
-}
-
-.microphone-icon {
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-self: center;
 }
 
 .microphone-btn {
+  width: 50px;
+  height: 47px;
   background-color: #f89900;
-  margin-top: 10px;
-  border: none;
   color: white;
-  padding: 25px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-self: center;
+  transition: .2s;
+  border: 2px solid transparent;
+  margin-bottom: 24px;
 }
 
 .microphone-btn:hover {
-  background-color: rgb(248, 132, 0);
+  background-color: transparent;
+  color: black;
+  border: 2px solid #000;
 }
 
 .microphone-btn i {
   font-size: 25px;
+}
+
+@media(max-width: 900px) {
+  .register-header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 130px;
+  }
+}
+
+@media(max-width: 655px) {
+  .register-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 130px;
+  }
+
+  .form .divide-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper input {
+    width: 400px;
+  }
 }

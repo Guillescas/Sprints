@@ -16,46 +16,79 @@
     <link rel="stylesheet" href="../CSS/register.css" />
   </head>
   <body>
+
     <header>
       <div class="register-header">
-        <div class="div-left">
-          <button>
-            <a href="../HTML/login.html">
-              <i class="fas fa-arrow-left"></i></script>
-              Voltar
-            </a>
-          </button>
+        <div class="back-btn">
+          <a href="../HTML/login.html">
+            <i class="fas fa-arrow-left"></i></script>
+            Voltar
+          </a>
+        </div>
+        <div>
+
         </div>
         <div class="div-right">
           <p>EducAll</p>
         </div>
       </div>
     </header>
+
     <div class="title">
-      <h3>Cadastro</h3>
+      <p>Cadastro</p>
     </div>
     <div class="wrapper">
       <div class="div-register">
+
         <form class="form">
-          <input type="text" placeholder="Nome..." class="caixa-texto" />
-          <input type="text" placeholder="Sobrenome..." class="caixa-texto" />
-          <input
-            type="email"
-            placeholder="E-mail..."
-            class="caixa-texto"
-            id="this-one"
-          />
-          <input type="password" placeholder="Senha..." class="caixa-texto" />
-          <input
-            type="password"
-            placeholder="Repetir Senha..."
-            class="caixa-texto"
-          />
+          <div class="divide-inputs">
+            <div class="item">
+              <p>NOME</p>
+              <input type="text" class="caixa-texto" />
+            </div>
+            <div class="item">
+              <p>SOBRENOME</p>
+              <input type="text" class="caixa-texto" />
+            </div>
+          </div>
+          <div class="divide-inputs">
+            <div class="item">
+              <p>E-MAIL</p>
+              <input
+                type="email"
+                placeholder="exemplo@exemplo.com.br"
+                class="caixa-texto"
+                id="this-one"
+              />
+            </div>
+            <div class="item">
+              <p>CELULAR</p>
+              <input
+                type="email"
+                placeholder="(12) 98765-4321"
+                class="caixa-texto"
+              />
+            </div>
+          </div>
+          <div class="divide-inputs">
+            <div class="item">
+              <p>SENHA</p>
+              <input type="password" class="caixa-texto" />
+            </div>
+            <div class="item">
+              <p>CONFIRME A SENHA</p>
+              <input
+                type="password"
+                class="caixa-texto"
+              />
+            </div>
+          </div>
           <div class="wrap-button">
             <button type="submit" class="box-btn"><a href="../HTML/login.html">
             </a>Cadastrar</a>
             </button>
           </div>
+
         </form>
       </div>
     </div>

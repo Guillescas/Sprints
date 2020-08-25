@@ -27,6 +27,8 @@ body .microphone-icon {
 header {
   background-color: rgb(248, 132, 0);
   align-items: center;
+  height: 130px;
+  min-height: 130px;
 }
 
 .wrap-button a {
@@ -42,6 +44,8 @@ header {
 .title-content {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
+  height: 130px;
+  min-height: 130px;
 }
 
 .title-content .back-btn {
@@ -70,7 +74,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 24px;
   margin-bottom: 40px;
   font-size: 40px;
 }
@@ -124,7 +128,8 @@ header {
   width: 300px;
   border: solid 1px #CCC;
   border-radius: 8px;
-  padding: 8px 24px;
+  padding: 8px 18px;
+  font-weight: 300;
 }
 
 .wrap-button {
@@ -133,8 +138,16 @@ header {
   justify-content: center;
 }
 
+.wrap-button button:hover {
+  color: black;
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
 .wrap-button button {
+  transition: .2s;
   font-size: 22px;
+  border: 2px solid transparent;
 }
 
 .box-btn {
@@ -147,10 +160,6 @@ header {
   display: flex;
   align-items: center;
   justify-self: center;
-}
-
-.box-btn:hover {
-  background-color: #f89900;
 }
 
 .not-registered {
@@ -180,18 +189,20 @@ header {
 }
 
 .microphone-btn {
+  width: 50px;
+  height: 47px;
   background-color: #f89900;
-  border: none;
   color: white;
-  padding: 28px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-self: center;
+  transition: .2s;
+  border: 2px solid transparent;
+  margin-bottom: 24px;
 }
 
 .microphone-btn:hover {
-  background-color: rgb(248, 132, 0);
+  background-color: transparent;
+  color: black;
+  border: 2px solid #000;
 }
 
 .microphone-btn i {
